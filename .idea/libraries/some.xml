@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="some">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Servlet3.0-05-WebFragment-Use/web/WEB-INF/lib/some.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

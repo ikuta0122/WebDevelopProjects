@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/JSP-05-CustomizeTag-ForEach-4-Final/src/com/ikuta/demo/ForEachTag.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JSP-05-CustomizeTag-ForEach-4-Final/src/com/ikuta/demo/ForEachTag.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JSP-05-CustomizeTag-ForEach-4-Final/src/com/ikuta/demo/ForEachTag.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JSP-05-CustomizeTag-TagAttribute/src/com/ikuta/demo/IfTag.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JSP-05-CustomizeTag-TagAttribute/src/com/ikuta/demo/IfTag.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JSP-05-CustomizeTag-TagBody/src/com/ikuta/demo/LowerToUpperTag.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JSP-05-CustomizeTag-TagBody/src/com/ikuta/demo/LowerToUpperTag.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JSP-05-CustomizeTag-TagBody/src/com/ikuta/demo/LowerToUpperTag.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JSP-07-StudentManagementSystem/src/com/ikuta/beans/Student.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JSP-07-StudentManagementSystem/src/com/ikuta/dao/StudentDaoImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JSP-07-StudentManagementSystem/src/com/ikuta/service/IStudentService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JSP-07-StudentManagementSystem/src/com/ikuta/servlets/LoginServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JSP-07-StudentManagementSystem/src/com/ikuta/servlets/RegisterServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JSP-07-StudentManagementSystem/src/com/ikuta/utils/JdbcUtils.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

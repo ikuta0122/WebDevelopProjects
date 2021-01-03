@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Listener-01-ObserverMode:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Listener_01_ObserverMode_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Listener-01-ObserverMode/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Listener-01-ObserverMode" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

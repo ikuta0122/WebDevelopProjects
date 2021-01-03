@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID" version="2.5">
+
+    <!-- FirstServlet注册Servlet --><!--精确路径模式-->
+    <servlet>
+        <servlet-name>first-servlet</servlet-name>
+        <servlet-class>com.ikuta.FirstServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>first-servlet</servlet-name>
+        <url-pattern>/first/some</url-pattern>
+        <url-pattern>/some</url-pattern>
+    </servlet-mapping>
+
+    <!-- SecondServlet注册Servlet --><!--通配符路径模式-->
+    <servlet>
+        <servlet-name>second-servlet</servlet-name>
+        <servlet-class>com.ikuta.SecondServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>second-servlet</servlet-name>
+        <url-pattern>/second/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- ThirdServlet注册Servlet --><!--全路径模式-->
+    <servlet>
+        <servlet-name>third-servlet</servlet-name>
+        <servlet-class>ThirdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>third-servlet</servlet-name>
+        <url-pattern>/third</url-pattern>
+        <!-- <url-pattern>/*</url-pattern>-->
+        <!-- <url-pattern>/</url-pattern> -->
+    </servlet-mapping>
+
+    <!-- FourthServlet注册Servlet --><!--后缀名模式-->
+    <servlet>
+        <servlet-name>fourth-servlet</servlet-name>
+        <servlet-class>com.ikuta.FourthServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fourth-servlet</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+</web-app>

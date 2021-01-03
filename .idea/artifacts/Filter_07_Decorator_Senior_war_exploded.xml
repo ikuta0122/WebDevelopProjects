@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Filter-07-Decorator-Senior:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Filter_07_Decorator_Senior_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Filter-07-Decorator-Senior/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Filter-07-Decorator-Senior" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

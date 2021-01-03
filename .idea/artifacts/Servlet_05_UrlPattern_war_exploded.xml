@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Servlet-05-UrlPattern:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Servlet_05_UrlPattern_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Servlet-05-UrlPattern/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Servlet-05-UrlPattern" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="some" />
+          <element id="library" level="project" name="jstl-1.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

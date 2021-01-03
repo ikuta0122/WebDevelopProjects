@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JSP-04-EL-InternalObject:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JSP_04_EL_InternalObject_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JSP-04-EL-InternalObject/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JSP-04-EL-InternalObject" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

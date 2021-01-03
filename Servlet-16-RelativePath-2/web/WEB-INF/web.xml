@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID" version="2.5">
+    <!-- 配置文件后台路径举例分析 -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    <!--
+        这是一个后台路径
+        其参照路径是web应用的根[http://localhost:8080/16-RelativePath-two]
+        服务器将其自动转换为绝对路径:http://localhost:8080/16-RelativePath-two/loginServlet
+        后台路径的作用:标识,即客户端想要访问LoginServlet,必须提交以上的绝对路径
+        客户端现在提交的请求为:http://localhost:8080/16-RelativePath-two/loginServlet
+    -->
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

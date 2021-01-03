@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Insert title here</title>
+</head>
+<body>
+<!-- 超链接前台路径举例分析 -->
+<!--
+  该路径是一个前台路径
+  参照路径是当前web服务器的根路径[http://localhost:8080]
+  浏览器将其转为绝对路径:http://localhost:8080/images/ikuta.jpg
+  在web服务器下是没有images目录的,所有这个相对路径是无法显示图片的
+ -->
+<img alt="ikuta" src="/images/ikuta.jpg"><br>
+
+<!--
+  该路径是一个前台路径
+  参照路径是当前web服务器的根路径[http://localhost:8080]
+  浏览器将其转为绝对路径:http://localhost:8080/16-RelativePath/images/ikuta.jpg
+  在web服务器下有16-RelativePath-one项目,而该项目下有images/ikuta.jpg资源
+  所有这个相对路径是可以显示图片的
+ -->
+<img alt="ikuta" src="/Servlet_16_RelativePath_1/images/ikuta.jpg"><br>
+
+<!-- 前台页面中以路径名称开头的相对路径举例分析 -->
+<!--
+  该路径是一个以路径名称开头的相对路径
+  参照路径是当前访问路径的资源路径[http://localhost:8080/16-RelativePath-one]
+  浏览器将其转换为绝对路径:http://localhost:8080/16-RelativePath-one/images/ikuta.jpg
+ -->
+<img alt="ikuta" src="images/ikuta.jpg">
+</body>
+</html>

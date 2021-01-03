@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="myTag">
+    <output-path>$PROJECT_DIR$/out/artifacts/myTag</output-path>
+    <root id="archive" name="myTag.jar">
+      <element id="directory" name="com">
+        <element id="directory" name="ikuta">
+          <element id="directory" name="demo">
+            <element id="file-copy" path="$PROJECT_DIR$/JSP-05-CustomizeTag-ForEach-4-Final/src/com/ikuta/demo/ForEachTag.java" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/JSP-05-CustomizeTag-Use/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/JSP-05-CustomizeTag-ForEach-4-Final/web/WEB-INF/myTag.tld" />
+      </element>
+    </root>
+  </artifact>
+</component>

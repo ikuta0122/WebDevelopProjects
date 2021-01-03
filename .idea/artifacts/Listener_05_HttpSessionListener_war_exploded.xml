@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Listener-05-HttpSessionListener:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Listener_05_HttpSessionListener_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Listener-05-HttpSessionListener/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Listener-05-HttpSessionListener" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

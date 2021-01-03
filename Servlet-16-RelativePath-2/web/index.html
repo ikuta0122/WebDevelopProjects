@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Insert title here</title>
+</head>
+<body>
+<!-- 表单前台路径举例分析 -->
+<!--
+  这是一个前台路径
+  其参照路径是当前web服务器的根[http://localhost:8080]
+  浏览器自动将该前台路径转换为绝对路径:http://localhost:8080/loginServlet
+  在web服务器的根目录中没有loginServlet,所以无法访问到该资源,报错404
+ -->
+<form action="/loginServlet" method="post">
+  用户名:<input type="text" name="username"/><br>
+  <input type="submit" value="登陆">
+</form>
+<hr>
+<!--
+  这是一个前台路径
+  其参照路径是当前web服务器的根[http://localhost:8080]
+  浏览器自动将该前台路径转换为绝对路径:http://localhost:8080/16-RelativePath-two/loginServlet
+   在web服务器的根目录中有/16-RelativePath-two/loginServlet,所以可以访问到该资源
+ -->
+<form action="/Servlet_16_RelativePath_2/loginServlet" method="post">
+  用户名:<input type="text" name="username"/><br>
+  <input type="submit" value="登陆">
+</form>
+<hr>
+<!-- 前台页面中以路径名称开头的相对路径举例分析 -->
+<!--
+  这是一个以路径名称开头的相对路径
+  其参照路径是当前web服务器的根[http://localhost:8080/16-RelativePath-two]
+  浏览器将其自动转换为绝对路径:http://localhost:8080/16-RelativePath-two/loginServlet
+-->
+<form action="loginServlet" method="post">
+  用户名:<input type="text" name="username"/><br>
+  <input type="submit" value="登陆">
+</form>
+</body>
+</html>

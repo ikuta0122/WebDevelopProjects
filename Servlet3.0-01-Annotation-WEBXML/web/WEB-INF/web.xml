@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<!-- 注册Servlet -->
+	<servlet>
+		<servlet-name>SomeServlet</servlet-name>
+		<servlet-class>com.ikuta.servlets.SomeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SomeServlet</servlet-name>
+		<url-pattern>/xxx</url-pattern>
+	</servlet-mapping>
+	<!-- 注册Filter -->
+	<filter>
+		<filter-name>SomeFilter</filter-name>
+		<filter-class>com.ikuta.filters.SomeFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>SomeFilter</filter-name>
+		<url-pattern>/xxx</url-pattern>
+	</filter-mapping>
+	<!-- 注册Listener -->
+	<listener>
+		<listener-class>com.ikuta.listeners.MyServletContextListener</listener-class>
+	</listener>
+	
+	
+</web-app>

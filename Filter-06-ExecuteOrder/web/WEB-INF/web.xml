@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID" version="2.5">
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <!-- 注册SomeFilter -->
+    <!--Filter的执行原理
+        Filter中存在一个数组和一个Map
+        一个Map:key为<url-pattern>的值,value为Filter实例对象的引用
+        一个数组:存放着与请求相匹配的所有Filter
+        执行原理:
+            当对某资源的请求到达WEB容器时
+            第一步:
+                对该请求进行解析得出URI
+            第二步:
+                该URI与Map中的key进行比较.
+                如果Map中存在相匹配的key,则读取其value[Filter实例对象的引用]
+                将该引用存入到数组中
+            第三步:
+                然后继续向后查找直至该Map查找完毕,完成数组初始化
+            第四步:
+                数组初始化完毕后,开始按照数组元素顺序进行执行
+                数组中所有的Filter执行完毕后,再跳转到请求的目标资源
+    -->
+    <filter>
+        <filter-name>SomeFilter</filter-name>
+        <filter-class>com.ikuta.filters.SomeFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SomeFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!-- 注册OtherFilter -->
+    <filter>
+        <filter-name>OtherFilter</filter-name>
+        <filter-class>com.ikuta.filters.OtherFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>OtherFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!-- 注册SomeServlet -->
+    <!--回顾Servlet
+            Servlet存在两个Map
+            第一个Map:key为<url-pattern>的值,value为Servlet实例对象的引用
+            第二个Map:key为<url-pattern>的值,value为<servlet-class>的值[Servlet类的全限定性类名]
+        执行原理:
+            当对Servlet的请求到达Servlet容器时
+            第一步:
+                对该请求进行解析得出URI
+            第二步:
+                该URI与第一个Map中的key进行比较.
+                如果存在相匹配的key,则读取其value[Servlet实例对象的引用].
+                执行该Servlet的service()方法.
+                此时Servlet执行结束
+            第三步:
+                如果第二步没有找到相应的key,该URI再与第二个Map中的key进行比较.
+                如果存在相匹配的key,则读取其value[Servlet类的全限定性类名].
+                然后使用反射机制创建该Servlet实例,并将该实例写入到第一个Map.
+                执行该Servlet的service()方法.
+                此时Servlet执行结束
+            第四步:
+                如果第三步没有找到相应的key,则跳转到系统错误处理页面404
+    -->
+    <servlet>
+        <servlet-name>SomeServlet</servlet-name>
+        <servlet-class>com.ikuta.servlets.SomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SomeServlet</servlet-name>
+        <url-pattern>/someServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
