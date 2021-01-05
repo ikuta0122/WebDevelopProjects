@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="myTags">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/JSP-05-CustomizeTag-Use/web/WEB-INF/lib/myTags.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
